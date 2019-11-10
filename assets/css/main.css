@@ -633,7 +633,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		max-width: calc(100% - 4em);
 		width: 70em;
 	}
@@ -2260,9 +2260,9 @@ input, select, textarea {
 
 	select {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.3)' /%3E%3C/svg%3E");
-		background-size: 1.25rem;
+		background-size: 1.25em;
 		background-repeat: no-repeat;
-		background-position: calc(100% - 1rem) center;
+		background-position: calc(100% - 1em) center;
 		height: 3em;
 		padding-right: 3em;
 		text-overflow: ellipsis;
@@ -2841,8 +2841,9 @@ input, select, textarea {
 		display: inline-block;
 		font-weight: 300;
 		height: 3em;
+		width: 10em;
 		line-height: 3em;
-		padding: 0 2.25em;
+		/* padding: 0 2.25em; */
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
@@ -3370,7 +3371,7 @@ input, select, textarea {
 /* Header */
 
 	#page-wrapper {
-		padding-top: 3.5em;
+		/* padding-top: 3.5em; */
 	}
 
 	#header {
@@ -3490,40 +3491,45 @@ input, select, textarea {
 			max-width: 95%;
 			padding: 6em;
 			position: relative;
-			text-align: right;
+			text-align: center;
 			vertical-align: middle;
 			z-index: 1;
 		}
 
-			#banner .content header {
-				display: inline-block;
-				vertical-align: middle;
-			}
+		#banner .content header {
+			display: inline-block;
+			vertical-align: middle;
+		}
 
-				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
-				}
+		#banner .content header h2 {
+			font-size: 2.5em;
+			margin: 0;
+		}
 
-				#banner .content header p {
-					margin: 0.5em 0 0 0;
-					top: 0;
-				}
+		#banner .content header p {
+			margin: 0.5em 0 0 0;
+			top: 0;
+		}
 
-			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
-			}
+		#banner .content .actions {
+			margin-top: 5em;
+			display: inline-flex;
+		}
 
-				#banner .content .image img {
-					border-radius: 100%;
-					display: block;
-					width: 100%;
-				}
+		#banner .content .image {
+			border-radius: 100%;
+			display: inline-block;
+			height: 18em;
+			margin-left: 3em;
+			vertical-align: middle;
+			width: 18em;
+		}
+
+		#banner .content .image img {
+			border-radius: 100%;
+			display: block;
+			width: 100%;
+		}
 
 	body.is-touch #banner {
 		background-attachment: scroll;
@@ -3644,7 +3650,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 4.5em 0;
+				padding: 2.5em 0;
 			}
 
 	}
@@ -4109,3 +4115,52 @@ input, select, textarea {
 					}
 
 	}
+
+/* Projects */
+.carosel {
+	/* margin: 0em auto; */
+	cursor: pointer;
+	width: 100vw;
+	text-align: center;
+  }
+  .carosel h2 {
+	font-size: 2.5em;
+  }
+  .carosel  {
+	display: flex;
+	flex-direction: column;
+  }
+  @media (min-width: 1080px) {
+	.carosel  {
+	  flex-direction: row;
+	  justify-content: space-evenly;
+	}
+  }
+  .carosel  h1{
+	font-size: 3em;
+  }
+  @media (min-width: 1080px) {
+	.carosel  h1{
+	  font-size: 1.5em;
+	  justify-self: center;
+	}
+  }
+  .carosel .project {
+	color: #e9e9e9;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 33em;
+	height: 42.8em;
+	border-radius: 5em;
+	margin: 1.5em auto;
+	box-shadow: #7d7b7b 4px 8px 16px;
+  }
+  /* @media (max-width: 500px) {
+	.carosel  .project {
+	  width: 5em;
+	  height: 5em;
+	  /* margin: 1.2em 0em; */
+	}
+  } */
