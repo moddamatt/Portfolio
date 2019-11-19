@@ -1,116 +1,343 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Matthew Lewis</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload landing">
-		<div id="page-wrapper">
+  <head>
+    <title>Matthew Lewis</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body class="is-preload landing">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo"><a href="index.html">Matthew Lewis</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="#banner" class="scrolly">Home</a></li>
+            <li><a href="#about" class="scrolly">About</a></li>
+            <li><a href="#webdev" class="scrolly">Web Development</a></li>
+            <li><a href="#gamedev" class="scrolly">Game Development</a></li>
+          </ul>
+        </nav>
+      </header>
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Matthew Lewis</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<!-- <li><a href="#one" class="scrolly">About</a></li> -->
-							<li><a href="webdev.html">Web Development</a></li>
-							<li><a href="gamedev.html">Game Development</a></li>
-						</ul>
-					</nav>
-				</header>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="content">
+          <header>
+            <h2>Matthew Lewis - Full Stack Developer</h2>
+            <p>
+              ...when you're looking for professional graphics programming,
+              <br />
+              exceptionally laid out web apps, and dependable <br />
+              backend framework design.
+            </p>
+          </header>
+          <ul class="actions">
+            <li><a href="#about" class="button scrolly">About</a></li>
+            <li><a href="#webdev" class="button scrolly">Web Projects</a></li>
+            <li>
+              <a href="#gamedev" class="button scrolly">Game Development</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>Matthew Lewis - Full Stack Developer</h2>
-							<p>...when you're looking for professional graphics programming, <br />
-							exceptionally laid out web apps, and dependable <br />
-							backend framework design.</p>
-						</header>
-						<ul class="actions">
-							<li><a href="webdev.html" class="button">Web Projects</a></li>
-							<li><a href="gamedev.html" class="button">Game Projects</a></li>
-							<li><a href="#one" class="button">About</a></li>
-						</ul>
-					</div>
-					<a href="#one" class="goto-next scrolly">About</a>
-				</section>
+      <!-- About -->
+      <section id="about" class="wrapper style1 special fade-up">
+        <div class="container"></div>
+      </section>
 
-			<!-- About -->
-				<section id="one" class="wrapper style1 special fade-up">
-					<div class="container">
-						<!-- <header class="major">
-							<h2>Languages and Technology</h2>
-						</header>
-						<div class="box alt">
-							<div class="row gtr-uniform">
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/react_logo.png"/>
-									<h3>React</h3>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/spring_logo.png"/>
-									<h3>Java Spring Framwork</h3>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/c.png"/>
-									<h3>C# and C++</h3>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/unity.png"/>
-									<h3>Unity3D</h3>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/openGL.png"/>
-									<h3>OpenGL</h3>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<img class="icon solid alt major" src="images/DX.png"/>
-									<h3>DirectX</h3>
-								</section>
-							</div>
-						</div>
-						<footer class="major">
-							<ul class="actions special">
-								<li><a href="no-sidebar.html" class="button">See my Education</a></li>
-							</ul>
-						</footer> -->
-					</div>
-				</section>
+      <!-- Webdev -->
+      <section id="webdev" class="wrapper style1 special fade-up">
+        <h1 style="font-size: 2em;">Web Development Projects</h1>
+        <div class="carosel">
+          <div class="slider-for">
+            <div class="project">
+              <div class="content">
+                <div class="imageHover">
+                  <img
+                    class="projectImage"
+                    alt="Miracle Messages Map"
+                    src="images/mm_map_example.png"
+                  />
+                  <p class="underImage">
+                    Miracle Messages had a daunting goal – they wanted to
+                    inspire volunteers around the world to join their global
+                    effort to end homelessness. Based in San Francisco, Miracle
+                    Messages knew that they were projecting a site specific
+                    identity and needed a way to not only show their global
+                    footprint, but also allow for further expansion. To reach
+                    that goal our Lamba Lab team created a simple, yet elegant
+                    solution. We constructed a map app to display the locations
+                    of existing chapters with contact information embedded, as
+                    well as resources cues in unserved areas to create new
+                    chapters.
+                  </p>
+                </div>
+                <div class="text">
+                  <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end;"
+                  >
+                    <h1>Miracle Messages - Frontend Developer</h1>
+                    <a
+                      href="https://miracle-messages-staging.netlify.com/"
+                      class="button"
+                      >Visit Site</a
+                    >
+                  </div>
+                  <p>
+                    A dynamic app intended to show the global platform of the
+                    Miracle Messages team. Utilizing the MapBox Api we
+                    constructed a map to display the locations of existing
+                    chapters with contact information embedded, as well as
+                    resources cues in unserved areas to create new chapters.
+                  </p>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://twitter.com/ModdaMatt" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.linkedin.com/in/mattmorganlewis/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/moddamatt" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Matthew Lewis. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+                  Technologies Used
+                  <ul class="tech">
+                    <li>MapBox API in tandem with UBER react bindings</li>
+                    <li>AWS photo storage</li>
+                    <li>Node.js, Knek, Express</li>
+                    <li>Postgres database</li>
+                    <li>Redux state managment</li>
+                  </ul>
 
-		</div>
+                  <span class="imageHover"
+                    >Hover over the image for more details.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="content">
+                <div class="imageHover">
+                  <img
+                    class="projectImage"
+                    alt="Blackhole example"
+                    src="images/blackwhole.gif"
+                  />
+                  <p class="underImage">
+                    From the depths of despair comes a gut wrenching need - TO
+                    RANT! Life is tough. Relationships are tough. School -
+                    tough. Work - tough. Being able to let off steam and release
+                    those grievances is healthy and necessary to thriving in
+                    this sometimes frantic and difficult life. What better way
+                    to let loose on the universe than to let it all out down a
+                    virtual Blackhole?! Cranky client? Demanding spouse? Never
+                    ending deadlines? Shout them all out and throw them
+                    headfirst down the Backhole into oblivion. The release is
+                    real and the effects on others are zilch. You didn’t yell
+                    your head off and you didn’t make a fool out of yourself.
+                    The Blackhole will never divulge your innermost anxieties
+                    and rage... unless you want a gentle reminder later to
+                    reassure yourself that it all worked out. The Blackhole is
+                    just what you need to survive this crazy world. Blackhole is
+                    a Lamba team app designed to vent rage and frustration.
+                    Simple, effective and confidential.
+                  </p>
+                </div>
+                <div class="text">
+                  <div>
+                    <h1>Blackhole - Marketing</h1>
+                    <a href="https://theblackhole.netlify.com/" class="button"
+                      >Visit Site</a
+                    >
+                    <p>
+                      Utilized the core principles of web Development and the
+                      LESS CSS compiler to design a retro SciFi marketing
+                      website for the Blackhole web application with the goal of
+                      an app overview and team introduction.
+                    </p>
+                  </div>
+                  Technologies Used
+                  <ul class="tech">
+                    <li>HTML</li>
+                    <li>Javascript</li>
+                    <li>LESS CSS</li>
+                    <li>Slick carosel</li>
+                  </ul>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                  <span class="imageHover"
+                    >Hover over the image for more details.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="content">
+                <div class="imageHover">
+                  <img
+                    class="projectImage"
+                    alt="Rolodex"
+                    src="images/rolodex.jpg"
+                  />
+                  <p class="underImage">
+                    Ah, the good old days of exchanging business cards and
+                    tucking them neatly away in your pocket or purse to later
+                    file in a spinning wheel of information - a Roladex. But
+                    realistically who can carry a thirty pound Roladex of faded
+                    and crumpled business cards everywhere they go? And how to
+                    organize? By first name, By company? By business type? And
+                    how do you easily share that information via your network of
+                    coworkers, clients and suppliers? The Last Roladex is the
+                    answer. Chunk that archaic piece of 19th century lore away
+                    and store all your business contacts in one easily
+                    accessible always near you place - your phone. The Last
+                    Roladex utilizes QR codes and shareable networks, making
+                    storing and sharing business contacts as easy as the touch
+                    of the screen. Store thousands of contacts and organize in
+                    multiple formats and share in an instant. It will truly be
+                    your Last Roladex. A Lamba team app.
+                  </p>
+                </div>
+                <div class="text">
+                  <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end;"
+                  >
+                    <h1>The Last Rolodex - Frontend Developer</h1>
+                    <a href="https://thelastrolodex.netlify.com/" class="button"
+                      >Visit Site</a
+                    >
+                  </div>
+                  <p>
+                    The Last Roladex utilizes QR codes and shareable networks,
+                    making storing and sharing business contacts as easy as the
+                    touch of the screen. Store thousands of contacts and
+                    organize in multiple formats and share in an instant. It
+                    will truly be your Last Roladex. A Lamba team app.
+                  </p>
 
-	</body>
+                  <div class="tech-media">
+                    Technologies Used
+                    <ul class="tech">
+                      <li>React.js</li>
+                      <li>QR-scaner</li>
+                      <li>Material-UI</li>
+                    </ul>
+
+                    <span class="imageHover"
+                      >Hover over the image for more details.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="content">
+                <div class="text">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-off">
+            <div class="slider-nav">
+              <div class="project">
+                <h2>Miracle Messages</h2>
+                <img alt="Miracle Messages Map" src="images/mm_selection.png" />
+              </div>
+              <div class="project">
+                <h2>Blackhole</h2>
+                <img alt="Blackhole" src="images/bg2.jpg" />
+              </div>
+              <div class="project">
+                <h2>The Last Rolodex</h2>
+                <img alt="The Last Rolodex" src="images/rolodex.jpg" />
+              </div>
+              <div class="project">
+                <h2>My GitHub</h2>
+                <img alt="GitHub" src="images/github.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>← Explore my projects →</h2>
+      </section>
+
+      <!-- About -->
+      <section id="gamedev" class="spotlight style2 right">
+        <span class="image fit main"
+          ><img src="images/I19.gif" alt="Installation 19"
+        /></span>
+        <div class="content">
+          <header>
+            <h2>Installation 19</h2>
+            <p>A horror game from the minds of Nurbs Studios</p>
+          </header>
+          <p>
+            You're about to lose your home and marriage. The government needs to
+            secure a dark secret they offer a job to someone to secure what they
+            can you are the parakeet, the answer depends whether you come out or
+            not This is Installation 19
+          </p>
+          <ul class="actions">
+            <li>
+              <a
+                href="https://gamejolt.com/games/installation-19/222754"
+                class="button"
+                >Learn More</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://twitter.com/ModdaMatt"
+              class="icon brands alt fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mattmorganlewis/"
+              class="icon brands alt fa-linkedin-in"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/moddamatt"
+              class="icon brands alt fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Matthew Lewis. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="components/carosel.js"></script>
+  </body>
 </html>
